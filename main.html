@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js'></script>
+
+</head>
+<body>
+    <header>
+        <h1>Travel <span>Planner</span></h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#budget">Budget</a>
+            <a id="login-button" href="#">Login</a>
+            <a id="register-button" href="#">Register</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to the Interactive <br> Travel Planner</h1>
+            <p>Plan your next adventure with ease!</p>
+            <ul>
+                <li class="item1">
+                    <div class="bg"></div>
+                </li>
+                <li class="item2">
+                    <div class="bg"></div>
+                </li>
+                <li class="item3">
+                    <div class="bg"></div>
+                </li>
+                <li class="item4">
+                    <div class="bg"></div>
+                </li>
+                <li class="item5">
+                    <div class="bg"></div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Select Your <span>Destination</span></h2>
+            <form id="destination-form">
+                <label for="destination">Choose a destination:</label>
+                <input class="awesomplete" list="destinations" id="destination" name="destination" placeholder="Choose a destination">
+                <datalist id="destinations">
+                </datalist><br><br>
+                <button type="submit">Add Destination</button>
+            </form>
+            <ul id="selected-destinations"></ul>
+
+            <form id="activity-form">
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" name="activity" placeholder="Enter activity">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+                <button type="submit">Add Activity</button>
+            </form>
+            <ul id="itinerary-list"></ul>
+            <div id="map-container"></div>
+
+            <div class="frame">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+
+        </section>
+
+        <!-- Budget Section -->
+        <section id="budget">
+            <h2>Plan Your <span>Budget</span></h2>
+            <form id="budget-form">
+                <label for="expense">Expense:</label>
+                <input type="text" id="expense" name="expense" placeholder="Enter expense">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount">
+             <br> <br>  <button type="submit">Add Expense</button>
+            </form>
+            <ul id="expense-list"></ul>
+            <h3>Total: $<span id="total-amount">0</span></h3>
+
+            <div class='box'>
+                <h2>Check your budget</h2>
+            </div> 
+        </section>
+        <!-- Existing HTML -->
+
+        <!-- Accommodation Section -->
+        <section id="accommodation">
+            <h2>Plan Your <span> Accommodation</span></h2>
+            <form id="accommodation-form">
+                <label for="accommodation-type">Type:</label>
+                <input type="text" id="accommodation-type" name="accommodation-type" placeholder="Hotel, Airbnb, etc.">
+                <label for="accommodation-date">Date:</label>
+                <input type="date" id="accommodation-date" name="accommodation-date">
+            <br> <br>   <button type="submit">Add Accommodation</button>
+            </form>
+            <ul id="accommodation-list"></ul>
+
+            <img src="https://image.cdn2.seaart.ai/2023-12-13/clsnv114msbc73aberjg/a1632646576b802c5b2fd0e17a2b09e9cbf7db70_high.webp" alt="accommodation">
+        </section>
+
+        <!-- Transportation Section -->
+        <section id="transportation">
+            <h2>Plan Your <span>Transportation</span></h2>
+            <form id="transportation-form">
+                <label for="transportation-type">Type:</label>
+                <input type="text" id="transportation-type" name="transportation-type" placeholder="Flight, Train, Car, etc.">
+                <label for="transportation-date">Date:</label>
+                <input type="date" id="transportation-date" name="transportation-date">
+             <br><br>   <button type="submit">Add Transportation</button>
+            </form>
+            <ul id="transportation-list"></ul>
+        </section>
+        <div id="map-container"></div>
+
+        <button id="submit-button">Submit</button>
+
+<!-- Section to display consolidated data -->
+<section id="consolidated-data">
+    <h2>Consolidated Trip Details</h2>
+    <div id="trip-details"></div>
+</section>
+
+
+        <!-- forms -->
+        <!-- Login Form -->
+        <div id="login-form" class="form-popup">
+            <form class="form-container">
+                <h2>Login</h2>
+    
+                <input type="text" id="login-username" name="username" placeholder="UserName">
+                <input type="password" id="login-password" name="password" placeholder="Password">
+
+                <button type="submit" class="bttn">Login</button>
+                <button type="button" class="bttn cancel" id="close-login">Close</button>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-popup">
+            <form class="form-container">
+                <h2>Register</h2>
+                
+                <input type="text" id="reg-username" name="username" placeholder="UserName" />
+                <input type="password" id="reg-password" name="password" placeholder="Password"/>
+
+                <button type="submit" class="bttn">Register</button>
+                <button type="button" class="bttn cancel" id="close-register">Close</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

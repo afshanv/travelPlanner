@@ -1,0 +1,490 @@
+/* Add advanced CSS for better UI/UX */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: aliceblue;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header span{
+    color: blanchedalmond;
+    font-family: Lucida Handwriting  ;
+}
+
+header nav a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: bisque;
+    letter-spacing: 1px;
+}
+
+/* home section */
+
+#home {
+    background-color: #2f3640;
+    padding: 11rem;
+}
+
+#home ul {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, 50%);
+    width: 600px;
+    height: 150px;
+}
+
+#home ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #222;
+    transform: rotate(45deg);
+    transition: .5s;
+    margin: -100px;
+    overflow: hidden;
+    opacity: .6
+}
+
+#home ul li:hover {
+    opacity: 1;
+    cursor: pointer
+}
+
+#home ul li.item1 {
+    top: 0;
+    left: 0
+}
+
+#home ul li.item2 {
+    bottom: 0;
+    left: 25%;
+}
+
+#home ul li.item3 {
+    top: 0;
+    left: 50%;
+}
+
+#home ul li.item4 {
+    bottom: 0;
+    left: 75%;
+}
+
+#home ul li.item5 {
+    top: 0;
+    left: 100%;
+}
+
+#home ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+#home h1{
+    font-size: 4rem;
+    color: black;
+}
+
+#home p{
+    font-size: 1.55rem;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: beige;
+}
+ul li.item1 .bg {
+    background-image: url('https://img.freepik.com/free-photo/autism-day-awareness-with-colourful-portrait_23-2151365064.jpg?t=st=1713586790~exp=1713590390~hmac=5742130598829befb43c6f4095011df3761d4c993d1f3f4f40d76a2809664d9e&w=740');
+    background-size: cover;
+}
+
+ul li.item2 .bg {
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1713586858~exp=1713590458~hmac=9e637f666742632586b2ebefad68d87148f10f1ce92ac9a2db197a1b9ab12b1a&w=900');
+    background-size: cover;
+}
+
+ul li.item3 .bg {
+    background-image: url('https://img.freepik.com/free-photo/winding-road-cuts-path-through-lush-green-mountains-hazy-sky_91128-4483.jpg?t=st=1713587406~exp=1713591006~hmac=17bbf3f59b563f3f2973a936d5ee56c607aa5ed1573c4ccdfe6d497fb1dabeb4&w=996');
+    background-size: cover;
+}
+
+ul li.item4 .bg {
+    background-image: url('https://img.freepik.com/free-photo/abstract-design-with-colorful-patterns-nature-leaf-generated-by-ai_188544-15573.jpg?t=st=1713586965~exp=1713590565~hmac=4b1ababa58cdbad0043b0f5b11f8ed88f832f9c64af18e5d5b58691d3898d029&w=900');
+    background-size: cover;
+}
+
+ul li.item5 .bg {
+    background-image: url('https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?t=st=1713586923~exp=1713590523~hmac=7bba1a49c413591ee383facdbaad29fb037af46b2e9fd28d979ded9814f2adbb&w=900');
+    background-size: cover;
+}
+
+
+
+/* Section Styles */
+section {
+    margin: 2rem 0;
+    padding: 8rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+section h2 span {
+    color: blanchedalmond;
+    font-family: Lucida Handwriting  ;
+
+}
+section form label {
+    display: block;
+    margin: 0.5rem 0;
+    color: bisque;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+section form input {
+    padding: 1rem;
+    color: #222;
+    background-color: antiquewhite;
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: 900; 
+}
+
+section form button {
+    display: block;
+    width: 40%;
+    border:#222;
+    color: #222;
+    background-color: beige;
+    padding: 14px 28px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+}
+
+section form button:hover {
+    background-color: bisque;
+    color : black;
+}
+
+ul{
+    color: wheat;
+}
+/* destination */
+
+#destinations {
+    background-color: #30354f;
+}
+.frame {
+    height: 381px;
+    width: 550px;
+    margin-left: 60%;
+    margin-top: -18%;
+    display: flex;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+  }
+  .frame:hover {
+    transform: rotate(-25deg) skew(-25deg) translateY(-20px);
+  }
+  .frame span {
+    position: relative;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 25%;
+    background: url("https://media.gettyimages.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=");
+    background-size: cover;
+    background-position: calc(-130px * var(--i));
+    transition: 0.5s;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+  }
+  .frame:hover span:nth-child(odd) {
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgb(0, 0, 0, 0.5);
+  }
+  .frame:hover span:nth-child(even) {
+    transform: skewY(-25deg);
+    box-shadow: inset 20px 0 50px rgb(0, 0, 0, 0.5);
+  }
+  .frame span:first-child {
+    border-left: 5px solid white;
+  }
+  .frame span:last-child {
+    border-right: 5px solid white;
+  }
+  
+
+  /* budget */
+
+  #budget {
+    background: #0e1538;
+}
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin-left: 60%;
+    margin-top: -15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 140%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box h2 {
+    position: relative;
+    color: bisque;
+    font-size: 5em;
+    font-family: 'Lucida Handwriting', cursive;
+    z-index: 10;
+}
+
+/* accomadations */
+
+#accommodation{
+    background-color:#30354f;
+}
+
+img {
+    width: 800px;
+    margin-left: 60%;
+    margin-top: -10%;
+}
+
+/* transportation */
+
+#transportation {
+    background: url("https://i.pinimg.com/originals/eb/13/fc/eb13fcee005870fb5a46ac77adaef8b0.jpg");
+    background-position: left;
+}
+/* submit btn */
+
+#submit-button {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    left: 45%;
+    text-align: center;
+    line-height: 60px;
+    color:aliceblue;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#submit-button:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+#submit-button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+}
+
+#submit-button:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+
+/* ...data,, */
+
+#consolidated-data {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #30354f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#consolidated-data h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+#consolidated-data div {
+    margin-bottom: 1rem;
+     margin-left: 40%; 
+    
+}
+
+#consolidated-data h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 900;
+}
+
+#consolidated-data p {
+    margin: 0.5rem 0;
+    color: bisque;
+}
+
+/* forms */
+
+/* Form Styles */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid whitesmoke;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 500;
+    text-align: center;
+}
+
+.form-container label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-container input {
+    border: 0;
+    background: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-container .bttn {
+    border: 0;
+    background: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-container .bttn.cancel {
+    border:2px solid #f44336;
+}
+
+.form-container .bttn:hover{
+    background: #2ecc71;
+}
+
+.form-container .bttn.cancel:hover{
+    background: #f44336;
+}
